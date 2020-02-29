@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Tax Calculator</title>
+</head>
+<style>
+    body{
+        margin:20px;
+    }
+</style>
+
+<body>
+    <div>
+        <h1>Government Tax Calculator</h1>
+        <label>
+            <input type="text" id="inputBox" autofocus/>
+        </label>
+        </br></br>
+        <label>
+            <div>Tax Owed:<span id="taxOwed"></span></div>
+        </label>
+        </br>       
+        <label>
+            <div>Effective Tax Rate:<span id="effectiveTaxRate"></span></div>
+        </label>
+        </br>
+        <label>
+            <div>Retained Earnings:<span id="retainedEarnings"></span></div>
+        </label>
+        </br>
+        <label>
+            <button onclick="calculateTax()">Submit</button>
+            <button onclick="clearFields()">Clear</button>
+        </label>
+        </br></br>
+        <label>
+            <div id="errorMessage"></div>
+        </label>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
